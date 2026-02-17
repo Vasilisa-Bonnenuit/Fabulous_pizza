@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h1>FastAPI Auth</h1>
+
+<a href="/login">Login</a>
+<a href="/register">Register</a>
+<a href="/profile">Profile</a>
+
+<script>
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("logout") === "1") {
+        alert("You have been successfully logged out!");
+    }
+</script>
+
+</body>
+</html>
